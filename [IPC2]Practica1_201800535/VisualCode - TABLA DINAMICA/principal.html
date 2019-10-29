@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/PrincipalCreacion.css">
+</head>
+
+<body onload="justLogin()" onload="hiloPrincipal()">
+    <!--ACÁ DEBERIA ESTA LA OTRA DIVISION CON EL LOGIN-->
+    <div id="formLogin" class="contenedor-form">
+            <div class="formulario">
+                <h2>Iniciar Sesión</h2>
+                    <input id="user" type="text" placeholder="Usuario" required>
+                    <input id="pass" type="password" placeholder="Contraseña" required>
+                    <!--<button type="button" onclick="validacion()">Ingresar</button>-->
+                    <input id="btnIniciar" type="submit" onclick="inicioSesion()" value="Iniciar Sesión">
+            </div>
+    </div>
+    <div id="formPrincipal" class="principal-form">
+        <div class="formulario">
+            <h2>MIS MASCOTAS</h2>
+            <div id="caja" class="grid-container"> 
+            </div>
+            <div><p></p></div>
+            <div><p></p></div>
+        <div><input id="btnCrearMascota" type="submit" onclick="justCreativity()" value="Crear Mascota"></div>
+        <div><p></p></div>
+        <div><input id="btnCrearMascota" type="submit" onclick="justLogin()" value="Cerrar Sesión"></div>
+        </div>
+
+        <!--ACÁ QUITÉ EL DIV-->
+    </div>
+
+    <div id="formCreacion" class="contenedor-form">
+        <div class="formularioCreacion">
+            <h2>CREA TU MASCOTA</h2>
+            <input id="nombreMasc" type="text" placeholder="Nombre de la Mascota" required>
+            <select id="cboxTipo" class="TipoMascota">
+                <option value="Perro" selected>Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Loro">Loro</option>
+            </select>
+            <p></p>
+            <input id="btnCrear2" type="submit" onclick="validandoCreacion()" value="Crear Mi Mascota">
+            <p></p>
+            <input id="btnRegresar" type="submit" onclick="ingreso()" value="Regresar">
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/principal.js"></script>
+
+</body>
+
+</html>
